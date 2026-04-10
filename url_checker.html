@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Checker</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .container {
+      background: #fff;
+      padding: 100px;
+      width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    #message {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #007bff;
+      color: white;
+    }
+
+    .success { color: green; }
+    .error { color: red; }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>&#127760; URL Checker</h2>
+
+  <input type="text" id="urlInput" placeholder="Enter URL..." />
+  <div id="message"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>URL</th>
+        <th>Status</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+ 
+</body>
+<script src="app.js"></script>
+</html>
